@@ -32,12 +32,16 @@ a {
         .menu {
             text-transform: uppercase;
             width: 70%;
+            display: flex;
+            align-items: center;
 
             ul {
                 display: flex;
 
                 li {
-                    padding: 20px 10px;
+                    padding: 20px 25px;
+                    font-family: "Gotham-Bold";
+                    font-size: 14px;
                 }
             }
 
@@ -46,11 +50,32 @@ a {
         .contact-link {
             width: 20%;
             display: flex;
-            justify-content: space-between;
+            padding: 20px 10px;
 
             .phone-text,
             .phone-num {
-                padding: 20px 10px;
+                color: #b1243c;
+                padding: 5px 10px;
+
+            }
+
+            .phone-text {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-image: url(../images/call.png);
+                    background-repeat: no-repeat;
+                    top: -2px;
+                    left: -25px;
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+
+            .phone-num {
+                border-bottom: 3px solid #b1243c;
             }
         }
     }
@@ -71,10 +96,25 @@ a {
             display: flex;
             align-items: center;
             color: #fff;
+            font-family: "Gotham-Medium";
+            font-size: 20px;
 
             li {
+                text-transform: uppercase;
                 float: left;
                 padding-right: 20px;
+                position: relative;
+
+                &:not(:first-child) {
+                    padding-left: 20px;
+                }
+
+                &:not(:last-child)::after {
+                    content: ">";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
             }
         }
     }
@@ -82,21 +122,43 @@ a {
 }
 
 .content {
-    margin-top: 50px;
+
+    // margin-top: 50px;
+    section {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .link-back {
+        padding: 20px 0;
+        position: relative;
+        font-family: "Gotham-Medium";
+        font-size: 20px;
+
+        &::before {
+            content: "<";
+            position: absolute;
+            top: 0;
+            left: -10px;
+            color: #F67C91;
+        }
+    }
 
     .sidebar {
         width: 30%;
         float: left;
 
-        .link-back {
-            padding: 20px 0;
-            margin-bottom: 40px;
-        }
+
 
         .side-link {
+            margin-top: 50px;
+
             ul {
                 li {
                     padding: 20px 0;
+                    color: #f67c91;
+                    font-family: "Gotham-Medium";
+                    font-size: 16px;
                 }
             }
         }
@@ -115,6 +177,11 @@ a {
             width: 50%;
             float: left;
 
+            .body-content {
+                padding-right: 30px;
+                line-height: 28px;
+                font-size: 19px;
+            }
         }
 
         .content-right {
@@ -125,6 +192,8 @@ a {
                 background-color: #b1243c;
                 color: #fff;
                 padding: 30px 50px;
+                width: 60%;
+                margin-left: 40px;
 
                 .inner-content {
                     .title {
@@ -178,11 +247,12 @@ a {
 
     .all-services-out {
         padding: 30px 0;
+        padding-bottom: 100px;
         background: #f7f7f7;
 
         .title {
             font-size: 42px;
-            padding: 20px 0;
+            margin-bottom: 50px;
         }
 
         .all-services {
@@ -190,7 +260,46 @@ a {
 
             .s-item {
                 width: 33%;
-                padding: 0 20px;
+
+                background-color: #fff;
+
+                .s-content {
+                    padding: 20px;
+
+                    .title {
+                        color: #212e3b;
+                        font-family: "FreightDispProSemibold-Regular";
+                    }
+
+                    .snippet {
+                        color: #3a4e61;
+                        font-family: "Gotham-Light";
+                        font-size: 19px;
+
+                    }
+
+                    .more {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+
+                        font-family: "Gotham-Bold";
+                        font-size: 16px;
+
+                        a {
+                            color: #f67c91;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin: 0 20px;
+                }
+
+                .s-img {
+                    img {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
@@ -200,8 +309,8 @@ footer {
     .foot-slide {
         background-color: #B1243C;
         color: #fff;
-        padding: 30px 0;
-        padding-bottom: 100px;
+        padding: 50px 0;
+        padding-bottom: 130px;
 
         .title {
             font-size: 42px;
@@ -225,9 +334,10 @@ footer {
     }
 
     .footer {
-        padding: 30px 0;
+        padding: 130px 0;
         background-color: #212e3b;
         color: #fff;
+
         .foot-left {
             width: 40%;
             float: left;
@@ -236,36 +346,47 @@ footer {
         .foot-right {
             width: 60%;
             float: left;
-            
-            .menu-left{
+            font-family: "Gotham-Bold";
+            font-size: 14px;
+
+            .menu-left {
                 width: 40%;
                 float: left;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         padding: 10px 0;
                     }
                 }
             }
-            .menu-right{
+
+            .menu-right {
                 width: 60%;
                 float: left;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         padding: 10px 0;
                     }
                 }
             }
-            a{
+
+            a {
                 color: #fff;
             }
         }
-        
+
     }
-    .copyright{
+
+    .copyright {
         padding: 20px 0;
         background-color: #b1243c;
         text-align: right;
         color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #f67c91;
+        font-family: "Gotham-Bold";
     }
 
 }
