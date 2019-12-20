@@ -1,0 +1,110 @@
+.background-brown {
+  background-color: #f7f7f7;
+  padding: 0 0 30px 0;
+}
+.other-service {
+  &__content-block {
+    padding: 0 0 30px 0;
+    background-color: #fff;
+  }
+}
+.container {
+  max-width: 1440px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.breadcrumbs {
+  &__child {
+    span:not(:last-child) {
+      color: rgba(246, 124, 145, 1);
+    }
+  }
+}
+.background-rose {
+  background-color: rgba(177, 36, 60, 1);
+}
+h2.title {
+  margin-bottom: 50px;
+}
+.property {
+  &__form {
+    &--body {
+      form {
+        label {
+          color: rgba(246, 124, 145, 1);
+        }
+        input,
+        select {
+          background-color: rgba(246, 124, 145, 1);
+          border: none;
+          border-radius: 0%;
+          color: #fff;
+        }
+        .submit {
+          background-color: rgba(177, 36, 60, 1);
+          padding: 7px 40px;
+          color: #fff;
+          border: 2px solid #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    &--title {
+      color: #fff;
+    }
+    &--description {
+      color: #fff;
+      margin-top: 20px;
+    }
+  }
+}
+.side-link {
+  margin-top: 50px;
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+  ul {
+    list-style: none;
+    li {
+      padding: 20px 0;
+      color: #f67c91;
+      font-size: 16px;
+    }
+  }
+}
+.link-back {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 50px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+  &::before {
+    content: "";
+    background-image: url(../images/back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 24px;
+    position: absolute;
+  }
+  a {
+    padding-left: 25px;
+  }
+}
+.trad-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .trad-name {
+    width: 100%;
+    text-align: center;
+  }
+}

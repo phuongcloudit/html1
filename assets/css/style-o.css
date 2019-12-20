@@ -1,0 +1,130 @@
+.background-brown {
+  background-color: #f7f7f7;
+  padding: 0 0 30px 0;
+}
+
+.other-service__content-block {
+  padding: 0 0 30px 0;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.breadcrumbs__child span:not(:last-child) {
+  color: #f67c91;
+}
+
+.background-rose {
+  background-color: #b1243c;
+}
+
+h2.title {
+  margin-bottom: 50px;
+}
+
+.property__form--body form label {
+  color: #f67c91;
+}
+
+.property__form--body form input,
+.property__form--body form select {
+  background-color: #f67c91;
+  border: none;
+  border-radius: 0%;
+  color: #fff;
+}
+
+.property__form--body form .submit {
+  background-color: #b1243c;
+  padding: 7px 40px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+
+.property__form--title {
+  color: #fff;
+}
+
+.property__form--description {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.side-link {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .side-link {
+    margin-top: 20px;
+  }
+}
+
+.side-link ul {
+  list-style: none;
+}
+
+.side-link ul li {
+  padding: 20px 0;
+  color: #f67c91;
+  font-size: 16px;
+}
+
+.link-back {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .link-back {
+    margin-bottom: 20px;
+  }
+}
+
+.link-back::before {
+  content: "";
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 24px;
+  position: absolute;
+}
+
+.link-back a {
+  padding-left: 25px;
+}
+
+.trad-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trad-item .trad-name {
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=style-o.css.map */
