@@ -22,7 +22,7 @@
                         <a class="navbar-brand d-lg-none" href="">
                             <img class="logo-header" src="./assets/images/logo-light.png" alt="logo">
                         </a>
-                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                        <div class="collapse navbar-collapse main-menu-item justify-content-sm-center justify-content-center justify-content-md-center"
                             id="navbarSupportedContent">
                             <ul class="navbar-nav w-100 justify-content-between">
                                 <li class="nav-item d-lg-block d-none">
@@ -71,12 +71,13 @@
     </header>
 
     <main id="main" role="main" class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-sm-center justify-content-center justify-content-md-center">
             <div class="cover-img">
                 <img src="./assets/images/property-cover.png" alt="" class="img-fluid">
             </div>
         </div>
-        <section class="full-screen height-100 background-red d-flex flex-column justify-content-center">
+        <section
+            class="full-screen height-100 background-red d-flex flex-column justify-content-sm-center justify-content-center justify-content-md-center">
             <span></span>
             <div class="container breadcrumbs text-white">
                 <div class="breadcrumbs__child text-uppercase">
@@ -86,7 +87,7 @@
             </div>
             <span></span>
         </section>
-        <div class="pt-50 pb-100">
+        <section>
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -124,10 +125,10 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="bg-white p-5">
-                            <div class="ours-contact__form--title">
+                            <div class="apply__form--title">
                                 <h3>Contact Us</h3>
                             </div>
-                            <div class="ours-contact__form--body">
+                            <div class="apply__form--body">
                                 <form method="post" action="" accept-charset="UTF-8">
                                     <input type="hidden" name="CRAFT_CSRF_TOKEN"
                                         value="L07bSSPxji97G_FUgaMtUyFTCXVaz0I9TBMktFvHviiUXJV-2AE7ilcktBNlt_1CMHejArjZfD9mJVYxC_92SS9_dMQwpOZS43GhNIlYc70=">
@@ -143,14 +144,14 @@
                                     <h6 class="mt-4"><label for="from-phone" class="text-uppercase text-color-gray">Your
                                             Telephone No.</label>
                                     </h6>
-                                    <input id="from-phone" type="number" name="fromPhone" value="" class="form-control">
+                                    <input id="from-phone" type="text" name="fromPhone" value="" class="form-control">
                                     <h6 class="mt-4"><label for="from-houseNo"
                                             class="text-uppercase text-color-gray">house No.</label></h6>
-                                    <input id="from-houseNo" type="number" name="fromHouseNo" value=""
+                                    <input id="from-houseNo" type="text" name="fromHouseNo" value=""
                                         class="form-control">
                                     <h6 class="mt-4"><label for="from-postcode"
                                             class="text-uppercase text-color-gray">Postcode</label></h6>
-                                    <input id="from-postcode" type="number" name="fromPostcode" value=""
+                                    <input id="from-postcode" type="text" name="fromPostcode" value=""
                                         class="form-control">
                                     <h6 class="mt-4"><label for="message" class="text-uppercase text-color-gray">Your
                                             Message</label></h6>
@@ -177,8 +178,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <section>
+        </section>
+        <section class="background-grey-light full-screen">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -186,65 +187,73 @@
                             Proud Supporters of
                         </h2>
                         <div class="row trademark-logo">
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/arfc-logo.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/arfc-logo.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     Ards Rugby Football Club
                                 </div>
                             </div>
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/ciyms-logo.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/ciyms-logo.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     CIYMS
                                 </div>
                             </div>
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/bcc-logo.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/bcc-logo.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     Breast Cancer Campaign
                                 </div>
                             </div>
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/ataxia-logo.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/ataxia-logo.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     Ataxia UK
                                 </div>
                             </div>
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/unicef-logo.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/unicef-logo.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     UNICEF
                                 </div>
                             </div>
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/jeans-for-genes.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/jeans-for-genes.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     North Down Cricket Club
                                 </div>
                             </div>
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/ndcc-logo.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/ndcc-logo.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     Jeans for Genes
                                 </div>
                             </div>
-                            <div class="trad-item col-3">
-                                <div class="trad-logo">
-                                    <img src="./assets/images/tiny-life.png" alt="">
+                            <div
+                                class="trad-item col-md-3 col-6 text-center">
+                                <div class="trad-logo justify-content-sm-center justify-content-center justify-content-md-center row align-items-center"">
+                                    <img src=" ./assets/images/tiny-life.png" alt="">
                                 </div>
                                 <div class="trad-name">
                                     Tiny Life
@@ -255,7 +264,23 @@
                 </div>
             </div>
         </section>
-        <div class="pt-50 pb-100">
+        <section id="criteria" class="background-rose full-screen">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <ul class="col-md-4 col-9">
+                        <li>Established for over 110 years</li>
+                        <li>Trusted to get the best result for you</li>
+                        <li>Local Experts with local knowledge</li>
+                    </ul>
+                    <ul class="col-md-4 col-9">
+                        <li>Lexcel Accredited</li>
+                        <li>Clear Cost-effective pricing</li>
+                        <li>Use of latest technology</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="background-grey about-us__apply full-screen">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -266,58 +291,58 @@
                             <p>
                                 Stewarts is a continually evolving law firm keen to attract Solicitors and support staff
                                 of all levels who have an ambition to succeed and a drive to develop within the firm.
-                                <br/><br/>
+                                <br /><br />
                                 We are keen to receive approaches from established legal professionals wishing to ply
                                 their trade and support their existing clients within an efficient, proactive and modern
                                 firm.
-                                <br/><br/>
+                                <br /><br />
                                 We are also keen to receive approaches from sole practitioners or practitioners nearing
                                 retirement who wish to have a secure footing and support for their loyal clients. This
                                 is evidenced by Norman Scott, formerly Senior Partner in FJ Orr & Company, Belfast
                                 joining the Firm in 2008 and John Campbell, formerly trading on his own account as
                                 Campbell, Bates & Company, Comber joining the Firm in 2015.
-                                <br/><br/>
+                                <br /><br />
                                 Stewarts is registered with the Law Society of England & Wales and can therefore offer
                                 training contracts to persons who have completed the appropriate LPC course.
-                                <br/><br/>
+                                <br /><br />
                                 Our internal training system ensures that it is possible to progress within the firm for
                                 employees who show interest, enthusiasm, willingness to learn and application. We keep a
                                 confidential record of all Curriculum Vitae received and continually review these when a
                                 position becomes available.
-                                <br/><br/>
+                                <br /><br />
                                 Please upload your CV online which will be confidentially forwarded to our Directors.
-                                <br/><br/>
+                                <br /><br />
                                 If you wish to apply in writing please forward your CV to:
-                                <br/><br/>
-                                Charlie P W Stewart<br/>
-                                Director<br/>
-                                3 Regent Street<br/>
-                                Newtownards<br/>
-                                BT23 4AB<br/>
+                                <br /><br />
+                                Charlie P W Stewart<br />
+                                Director<br />
+                                3 Regent Street<br />
+                                Newtownards<br />
+                                BT23 4AB<br />
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="bg-white p-5">
-                            <div class="ours-contact__form--title">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 about-us__apply-form">
+                        <div class="background-xam p-5">
+                            <div class="about-us__apply-form--title">
                                 <h3>Apply Now</h3>
                             </div>
-                            <div class="ours-contact__form--body">
+                            <div class="about-us__apply-form--body">
                                 <form method="post" action="" accept-charset="UTF-8">
-                                    
-                                    <h6 class="mt-5"><label for="from-name" class="text-uppercase text-color-gray">Your
+
+                                    <h6 class="mt-5"><label for="from-name2" class="text-uppercase text-color-gray">Your
                                             Name*</label></h6>
-                                    <input id="from-name" type="text" name="fromName" value="" class="form-control">
+                                    <input id="from-name2" type="text" name="fromName2" value="" class="form-control">
                                     <h6 class="mt-4"><label for="from-email" class="text-uppercase text-color-gray">Your
                                             Email*</label></h6>
-                                    <input id="from-email" type="email" name="fromEmail" value="" class="form-control">
-                                    <h6 class="mt-4"><label for="from-phone" class="text-uppercase text-color-gray">Your
+                                    <input id="from-email2" type="email" name="fromEmail2" value="" class="form-control">
+                                    <h6 class="mt-4"><label for="from-phone2" class="text-uppercase text-color-gray">Your
                                             Telephone No.</label>
                                     </h6>
-                                    <input id="from-phone" type="number" name="fromPhone" value="" class="form-control">
-                                    <h6 class="mt-4"><label for="message" class="text-uppercase text-color-gray">Your
+                                    <input id="from-phone2" type="text" name="fromPhone2" value="" class="form-control">
+                                    <h6 class="mt-4"><label for="message2" class="text-uppercase text-color-gray">Your
                                             Message</label></h6>
-                                    <textarea rows="10" cols="40" id="message" name="message"
+                                    <textarea rows="10" cols="40" id="message2" name="message"
                                         class="form-control"></textarea>
                                     <div class="text-center mt-5">
                                         <input type="submit" class="text-uppercase submit" value="Send">
@@ -328,59 +353,64 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="other-service background-brown full-screen pt-100 pb-100">
+        </section>
+        <section class="about-us background-xam full-screen">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="other-service__content-block">
+                        <div class="about-us__content-block">
                             <div>
-                                <div class="other-service__content-block--child">
+                                <div class="about-us__content-block--child">
                                     <img class="w-100" src="./assets/images/a.png" alt="">
                                 </div>
-                                <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
+                                <h2 class="mt-4 ml-4 title"><span class="text-center">Our Experts</span></h2>
                                 <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of
                                         sectors and we
                                         believe we are the best.</span></p>
                             </div>
-                            <div class="other-service__button-learn-more mt-4 ml-4">
+                            <div class="about-us__button-learn-more mt-4 ml-4">
                                 <a class="text-color-pink-red" href="#">LEARN MORE...</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="other-service__content-block">
+                        <div class="about-us__content-block">
                             <div>
-                                <div class="other-service__content-block--child">
+                                <div class="about-us__content-block--child">
                                     <img class="w-100" src="./assets/images/a.png" alt="">
                                 </div>
-                                <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
+                                <h2 class="mt-4 ml-4 title"><span class="text-center">Our Experts</span></h2>
                                 <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of
                                         sectors and we
                                         believe we are the best.</span></p>
                             </div>
-                            <div class="other-service__button-learn-more mt-4 ml-4">
+                            <div class="about-us__button-learn-more mt-4 ml-4">
                                 <a class="text-color-pink-red" href="#">LEARN MORE...</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="other-service__content-block">
+                        <div class="about-us__content-block">
                             <div>
-                                <div class="other-service__content-block--child">
+                                <div class="about-us__content-block--child">
                                     <img class="w-100" src="./assets/images/a.png" alt="">
                                 </div>
-                                <h2 class="mt-4 ml-4"><span class="text-center">Our Experts</span></h2>
+                                <h2 class="mt-4 ml-4 title"><span class="text-center">Our Experts</span></h2>
                                 <p class="mt-4 ml-4 mr-4"><span class="text-center">We have experts across a variety of
                                         sectors and we
                                         believe we are the best.</span></p>
                             </div>
-                            <div class="other-service__button-learn-more mt-4 ml-4">
+                            <div class="about-us__button-learn-more mt-4 ml-4">
                                 <a class="text-color-pink-red" href="#">LEARN MORE...</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <div class="row justify-content-sm-center justify-content-center justify-content-md-center">
+            <div class="cover-img">
+                <img src="./assets/images/about-cover-bottom.png" alt="" class="img-fluid">
             </div>
         </div>
     </main>
